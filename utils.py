@@ -62,7 +62,7 @@ def data_generation_mi(data_x, data_y, device="cpu"):
     if dismutations:  # Derangement
         data_y_shuffle = torch.index_select(data_y, 0, derangement(list(range(data_y.shape[0])), device))
         # ordered_derangement = [(idx + 1) % data_y.shape[0] for idx in range(data_y.shape[0])]
-        # data_y_shuffle = np.take(data_y, ordered_derangement, axis=0, out=data_y)
+        # data_y_shuffle = torch.index_select(data_y, 0, torch.Tensor(ordered_derangement).int().to(device))
     else:  # Permutation
         data_y_shuffle = torch.index_select(data_y, 0, torch.Tensor(np.random.permutation(data_y.shape[0])).int().to(device))
 
