@@ -49,9 +49,11 @@ All the MI estimators are implemented in `utils.py`.
 The neural networks, the class handling training/test of the estimators, and the main functions needed to run the code are implemented in `classes.py`.
 
 The file `main.py` runs all the experiments. 
-There are two running modalities that are accepted by the argument parser:
-- "staircase": runs the training where the target mutual information has a staircase shape;
-- "consistency_test": runs the self-consistency tests over the MNIST dataset.
+There are four running modalities that are accepted by the argument parser:
+- "staircase": target MI has a staircase shape and the scenario is Gaussian, Cubic, Asinh, and Half-cube;
+- "uniform": MI of uniform random variables;
+- "swiss": MI of the swiss-roll scenario;
+- "student": MI of the multivariate student distribution scenario. 
 
 Thus, you can run `main.py` by setting the argument "mode":
 > python main.py --mode staircase
