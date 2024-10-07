@@ -1,6 +1,8 @@
-# Discriminative Mutual Information Estimators based on the variational representation of the $f$-divergence
+# Mutual Information Estimation via $f$-Divergence and Data Derangements
 
-PyTorch implementation for the paper "Variational $f$-Divergence and Derangements for Discriminative Mutual Information Estimation".
+[Nunzio A. Letizia](https://scholar.google.com/citations?user=v50jRAIAAAAJ&hl=en), [Nicola Novello](https://scholar.google.com/citations?user=4PPM0GkAAAAJ&hl=en) and [Andrea M. Tonello](https://scholar.google.com/citations?user=qBiseEsAAAAJ&hl=en)
+
+Official repository of the paper " Mutual Information Estimation via $f$-Divergence and Data Derangements " published at NeurIPS 2024.
 
 ---
 
@@ -59,9 +61,21 @@ or by fixing the default mode of the parser to the desired one:
 
 ---
 
-## Citation
+## References and Acknowledgments
 
 If you use your code for your research, please cite our paper:
+```
+@article{letizia2023variational,
+  title={Variational $ f $-Divergence and Derangements for Discriminative Mutual Information Estimation},
+  author={Letizia, Nunzio A and Novello, Nicola and Tonello, Andrea M},
+  journal={arXiv preprint arXiv:2305.20025},
+  year={2023}
+}
+```
+The implementation is based on / inspired by:
+
+- [https://github.com/ermongroup/smile-mi-estimator](https://github.com/ermongroup/smile-mi-estimator)
+- [https://github.com/YuvalShalev/NJEE](https://github.com/YuvalShalev/NJEE)
 
 
 ---
