@@ -85,7 +85,10 @@ def train_student_with_config(config):
 
 if __name__ == '__main__':
 
-    scenario = "student"  # uniform  staircase student
+    args = argparse.ArgumentParser(description='PyTorch MI Estimation with f-divergence')
+    args.add_argument('--scenario', default='staircase', type=str, help='MI estimation scenario (default: staircase)')
+    args = parser.parse_args()
+    scenario = args.scenario  
 
     if scenario == "staircase":
         batch_sizes = [64]
