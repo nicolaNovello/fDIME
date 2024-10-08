@@ -53,15 +53,17 @@ There are four running modalities that are accepted by the argument parser:
 
 The code is set up to run using multiprocessing, using one process for each possible architecture type. The types of architectures implemented are: "joint", "deranged", and "separable", which can be set modifying the variable `architectures_list`.
 
-To test various MI estimators, the field 'divergences' in the dictionary `proc_params` can be set to "MINE", "NWJ", "SMILE", "CPC" for the related works, and "KL", "HD", "GAN", and "SL" for fDIME. "SL" is the shifted-log divergence proposed in [1], which achieves great performance but is not included in the experiments in the paper.
+To test various MI estimators, the field 'divergences' in the dictionary `proc_params` can be set to "MINE", "NWJ", "SMILE", "CPC" for the related works, and "KL", "HD", "GAN", and "SL" for fDIME. "SL" is the shifted-log divergence proposed in [1], which achieves great performance but is not included in the experiments of the paper.
 
-Thus, you can run `main.py` by setting the argument "mode":
+You can run `main.py` by setting the argument "mode":
 > python main.py --mode staircase
 
 or by fixing the default mode of the parser to the desired one:
 ```default='staircase'```
 
-[1] 
+[1] Novello, N. and Tonello, A. M. f -divergence based classification: Beyond the use of cross-entropy. In International Conference on Machine Learning, pp. 38448–38473. PMLR, 2024.
+
+
 ---
 
 ## References and Acknowledgments
