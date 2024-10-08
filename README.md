@@ -2,7 +2,7 @@
 
 [Nunzio A. Letizia](https://scholar.google.com/citations?user=v50jRAIAAAAJ&hl=en), [Nicola Novello](https://scholar.google.com/citations?user=4PPM0GkAAAAJ&hl=en), and [Andrea M. Tonello](https://scholar.google.com/citations?user=qBiseEsAAAAJ&hl=en)
 
-Official repository of the paper " Mutual Information Estimation via $f$-Divergence and Data Derangements " published at NeurIPS 2024.
+Official repository of the paper "Mutual Information Estimation via $f$-Divergence and Data Derangements" published at NeurIPS 2024.
 
 ---
 
@@ -44,16 +44,16 @@ $\mathcal{J}_ {GAN}(D) = \mathbb{E}_ {(\mathbf{x},\mathbf{y}) \sim p_ {XY}(\math
 
 ## How to run the code
 
-All the MI estimators are implemented in `utils.py`.
-
-The neural networks, the class handling training/test of the estimators, and the main functions needed to run the code are implemented in `classes.py`.
-
 The file `main.py` runs all the experiments. 
 There are four running modalities that are accepted by the argument parser:
 - "staircase": target MI has a staircase shape and the scenario is Gaussian, Cubic, Asinh, and Half-cube;
 - "uniform": MI of uniform random variables;
 - "swiss": MI of the swiss-roll scenario;
-- "student": MI of the multivariate student distribution scenario. 
+- "student": MI of the multivariate student distribution scenario.
+
+The code is set up to run using multiprocessing, using one process for each possible architecture type. The types of architectures implemented are: "joint", "deranged", and "separable", which can be set modifying the variable `architectures_list`.
+
+To test various MI estimators, the field 'divergences' in the dictionary `proc_params` can be set to "MINE", "NWJ", "SMILE", "CPC" for the related works, and "KL", "HD", "GAN", and "SL" for fDIME. "SL" is the shifted-log divergence proposed in [1], which achieves great performance but is not included in the experiments in the paper.
 
 Thus, you can run `main.py` by setting the argument "mode":
 > python main.py --mode staircase
@@ -61,6 +61,7 @@ Thus, you can run `main.py` by setting the argument "mode":
 or by fixing the default mode of the parser to the desired one:
 ```default='staircase'```
 
+[1] 
 ---
 
 ## References and Acknowledgments
