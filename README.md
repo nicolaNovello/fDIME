@@ -23,7 +23,13 @@ Official repository of the paper "Mutual Information Estimation via $f$-Divergen
 
 ### Derangement vs permutation
 
+Derangement             |  Permutation
+:-------------------------:|:-------------------------:
+![](https://github.com/nicolaNovello/fDIME/blob/main/Results/Staircase_GAN_deranged_d20_bs128_cubicFalse_derangements.png)  |  ![](https://github.com/nicolaNovello/fDIME/blob/main/Results/Staircase_GAN_deranged_d20_bs128_cubicFalse_permutations.png)
+
 ### Low variance MI estimate
+
+
 
 ---
 
