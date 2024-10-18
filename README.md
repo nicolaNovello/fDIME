@@ -21,15 +21,22 @@ Official repository of the paper "Mutual Information Estimation via $f$-Divergen
 
 # 📈 Important results from our paper
 
-### Derangement vs permutation
+## Derangement vs permutation
 
 Derangement             |  Permutation
 :-------------------------:|:-------------------------:
 ![](https://github.com/nicolaNovello/fDIME/blob/main/Results/Staircase_GAN_deranged_d20_bs128_cubicFalse_derangements.png)  |  ![](https://github.com/nicolaNovello/fDIME/blob/main/Results/Staircase_GAN_deranged_d20_bs128_cubicFalse_permutations.png)
 
-### Low variance MI estimate
+## Low variance and low bias MI estimate
 
+### Gaussian and Cubic
+<img src="Results/allStaircases_d5_bs64.png"/>
 
+### Half-cube, Asinh, Swiss roll
+<img src="Results/FigureB_allStaircases_d5_bs64_arcseparable.png"/>
+
+### Uniform and Student
+<img src="Results/FigureC_allStaircases_d1_bs64_arcseparable_scenuniform.png"/>
 
 ---
 
