@@ -23,12 +23,14 @@ Official repository of the paper "Mutual Information Estimation via $f$-Divergen
 
 ## Derangement vs permutation
 
+The figure shows the bound attained when using a random permutation mechanism, and how such a bound is not present when using derangement.
 Derangement             |  Permutation
 :-------------------------:|:-------------------------:
 ![](https://github.com/nicolaNovello/fDIME/blob/main/Results/Staircase_GAN_deranged_d20_bs128_cubicFalse_derangements.png)  |  ![](https://github.com/nicolaNovello/fDIME/blob/main/Results/Staircase_GAN_deranged_d20_bs128_cubicFalse_permutations.png)
 
 ## Low variance and low bias MI estimate
 
+The figures below show the comparison between the performance of well-known MI estimators and $f$-DIME. All the scenarios are described in the [paper](https://arxiv.org/abs/2305.20025), where additional results are also shown.
 ### Gaussian and Cubic
 <img src="Results/allStaircases_d5_bs64.png"/>
 
