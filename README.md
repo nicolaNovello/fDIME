@@ -102,7 +102,7 @@ $\mathcal{J}_ {GAN}(D) = \mathbb{E}_ {(\mathbf{x},\mathbf{y}) \sim p_ {XY}(\math
 
 ## 📝 References 
 
-If you use your code for your research, please cite our paper:
+If you use the code for your research, please cite our paper:
 ```
 @article{letizia2023variational,
   title={Variational $ f $-Divergence and Derangements for Discriminative Mutual Information Estimation},
