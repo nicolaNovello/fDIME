@@ -23,10 +23,10 @@ Official repository of the paper "Mutual Information Estimation via $f$-Divergen
 
 ## Derangement vs permutation
 
-The figure shows the bound attained when using a random permutation mechanism, and how such a bound is not present when using derangement.
-Derangement             |  Permutation
+To train neural mutual information estimators, it is crucial to obtain a batch of samples of $p_X(\mathbf{x})p_Y(\mathbf{y})$ from the batch drawn from $p_{XY}(\mathbf{x}, \mathbf{y})$. The figure shows that using a random permutation mechanism leads to an upper bound. The same bound is not present when using a derangement mechanism.
+    Permutation         |   Derangement
 :-------------------------:|:-------------------------:
-![](https://github.com/nicolaNovello/fDIME/blob/main/Results/Staircase_GAN_deranged_d20_bs128_cubicFalse_derangements.png)  |  ![](https://github.com/nicolaNovello/fDIME/blob/main/Results/Staircase_GAN_deranged_d20_bs128_cubicFalse_permutations.png)
+![](https://github.com/nicolaNovello/fDIME/blob/main/Results/Staircase_GAN_deranged_d20_bs128_cubicFalse_permutations.png) | ![](https://github.com/nicolaNovello/fDIME/blob/main/Results/Staircase_GAN_deranged_d20_bs128_cubicFalse_derangement.png)
 
 ## Low variance and low bias MI estimate
 
