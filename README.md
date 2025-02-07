@@ -106,11 +106,13 @@ $\mathcal{J}_ {GAN}(D) = \mathbb{E}_ {(\mathbf{x},\mathbf{y}) \sim p_ {XY}(\math
 
 If you use the code for your research, please cite our paper:
 ```
-@article{letizia2023variational,
-  title={Variational $ f $-Divergence and Derangements for Discriminative Mutual Information Estimation},
-  author={Letizia, Nunzio A and Novello, Nicola and Tonello, Andrea M},
-  journal={arXiv preprint arXiv:2305.20025},
-  year={2023}
+@inproceedings{NEURIPS2024_bdcfa850,
+ author = {Letizia, Nunzio Alexandro and Novello, Nicola and Tonello, Andrea M},
+ booktitle = {Advances in Neural Information Processing Systems},
+ pages = {105114--105150},
+ title = {Mutual Information Estimation via f-Divergence and Data Derangements},
+ volume = {37},
+ year = {2024}
 }
 ```
 ## 📋 Acknowledgments
