@@ -30,7 +30,7 @@ To train neural mutual information estimators, it is crucial to obtain a batch o
 
 ## Low variance and low bias MI estimate
 
-The figures below show the comparison between the performance of well-known MI estimators and $f$-DIME. All the scenarios are described in the [paper](https://arxiv.org/abs/2305.20025), where additional results are also shown.
+The figures below show the comparison between the performance of well-known MI estimators and $f$-DIME. All the scenarios are described in the [paper](https://proceedings.neurips.cc/paper_files/paper/2024/hash/bdcfa850adac4a1088153881282ca972-Abstract-Conference.html), where additional results are also shown.
 ### Gaussian and Cubic
 <img src="Results/allStaircases_d5_bs64.png"/>
 
